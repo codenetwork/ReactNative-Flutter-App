@@ -2,4 +2,4 @@
 Translator Flutter App designed to translate between native Australian languages. 
 
 ### Contributors
-1. @DotNickCore
+@DotNickCore
