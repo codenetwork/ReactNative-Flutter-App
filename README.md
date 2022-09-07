@@ -3,6 +3,6 @@ Translator Flutter App designed to translate between native Australian languages
 
 
 
-## Contributors
+### Contributors
+@bismillah-s
 
-1. Bismillah Sultani
