@@ -1,4 +1,4 @@
-# Translator-Flutter-App
+# Translator-React-App
 Translator React-Native App designed to translate between native Australian languages. 
 
 ### Contributors
