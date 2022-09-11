@@ -6,3 +6,5 @@ Translator React-Native App designed to translate between native Australian lang
 2. @haisoncao
 3. @bismillah-s
 
+
+To run the app: `npm run`
