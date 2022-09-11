@@ -7,4 +7,4 @@ Translator React-Native App designed to translate between native Australian lang
 3. @bismillah-s
 
 
-To run the app: `npm run`
+To run the app: `npm run` in the same directory
