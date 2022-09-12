@@ -2,9 +2,19 @@ import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import { useState } from 'react';
 
 
+
 export default function App() {
 
+  // -------------------- states ---------------------------------------
+
   const [enteredWord, setEnteredWord] = useState(''); 
+  
+  // state to remember user's word history
+  const [wordHistory, AddToWordHistory] = useState([]);
+
+
+  // ------------------- event handlers ---------------------------------
+
 
   // a function that listens for words for user to enter
 
@@ -16,11 +26,14 @@ export default function App() {
 
   function translateHandler() {
 
-    console.log(enteredWord)
-
+    AddToWordHistory([CurrentWordHistory => [...CurrentWordHistory, enteredWord]]);
   };
 
 
+  
+
+
+  // ------------------------------ The app view --------------------------
 
   return (
     <View style={styles.container}>
@@ -33,8 +46,8 @@ export default function App() {
       </View>
 
       <View style={styles.goalsContainer}>
-
-        <Text> The defnition of the word </Text>
+        
+        {wordHistory.map((word) => <Text>{word}</Text>)};
 
       </View>
 
@@ -42,6 +55,9 @@ export default function App() {
   );
 }
 
+
+
+// --------------------- styling ----------------------------------------
 
 const styles = StyleSheet.create(
   {
