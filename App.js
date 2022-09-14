@@ -7,11 +7,6 @@ export default function App() {
 
   // -------------------- states ---------------------------------------
 
-  const [enteredWord, setEnteredWord] = useState(''); 
-  
-  // state to remember user's word history
-  const [wordHistory, AddToWordHistory] = useState([]);
-
 
   // ------------------- event handlers ---------------------------------
 
@@ -19,19 +14,17 @@ export default function App() {
   // a function that listens for words for user to enter
 
   function wordInputHandler(enteredText) {
-    setEnteredWord(enteredText);
+    console.log(enteredText)
   };
 
   // a function that fires up when Translate button is clicked
 
   function translateHandler() {
 
-    AddToWordHistory([CurrentWordHistory => [...CurrentWordHistory, enteredWord]]);
   };
 
 
   
-
 
   // ------------------------------ The app view --------------------------
 
@@ -47,8 +40,6 @@ export default function App() {
 
       <View style={styles.goalsContainer}>
         
-        {wordHistory.map((word) => <Text>{word}</Text>)};
-
       </View>
 
     </View>
